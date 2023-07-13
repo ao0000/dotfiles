@@ -2,7 +2,7 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+[ -f /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Completion
 source $(brew --prefix)/etc/bash_completion

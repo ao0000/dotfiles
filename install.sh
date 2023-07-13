@@ -115,9 +115,19 @@ function setup_git(){
   cp $DOTFILES_PATH/git/.gitconfig/.gitignore_global $HOME/.config/git/ignore
 }
 
-function setup_osx_terminal(){
+function setup_osx(){
   # Disable last login message on osx terminal
   touch $HOME/.hushlogin
+
+  USER_NAME=$(whoami)
+  echo "Switch root user"
+  sudo -s
+  echo "$(brew --prefix)/bin/bash" >> /etc/shells
+
+  echo "Switch $USER_NAME user"
+  su $USER_NAME
+  echo "Change Bash shell"
+  chsh -s $(brew --prefix)/bin/bash
 }
 
 function reload_shell(){
@@ -136,7 +146,7 @@ function main(){
 
   create_symbolic
 
-  setup_osx_terminal
+  setup_osx
 
   reload_shell
 }
