@@ -53,8 +53,10 @@ function install_homebrew_package(){
     slack
     zoom
     discord
-    bitwarden
+    kindle
+    deepl
     clipy
+    bitwarden
   )
   for cask in ${casks[@]}; do
     brew install --cask $cask
