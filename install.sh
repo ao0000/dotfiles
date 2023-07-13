@@ -46,6 +46,7 @@ function install_homebrew_package(){
     docker
     sequel-ace
     postman
+    insomnia
     google-chrome
     google-japanese-ime
     slack
@@ -101,6 +102,9 @@ function create_symbolic(){
 
   # git
   ln -sf $DOTFILES_PATH/git/.gitconfig $HOME/.gitconfig
+
+  # tmux
+  ln -sf $DOTFILES_PATH/tmux/.tmux.conf $HOME/.tmux.conf
 }
 
 function setup_git(){
