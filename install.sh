@@ -33,7 +33,8 @@ function install_homebrew() {
     test -e /opt/homebrew/bin/brew && eval "$(/opt/homebrew/bin/brew shellenv)"
   elif [ ${CPU_ARCH} == "x86_64" ]; then
     # TODO: support x86_64
-    echo "x86_64 is not supported"
+    echo "Install Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   else
     echo "Your CPU architecture is not supported."
   fi
