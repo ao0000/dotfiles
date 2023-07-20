@@ -73,7 +73,7 @@ function install_homebrew_package(){
     docker-clean
     bat
     exa
-    delta
+    git-delta
     dust
     duf
     broot
