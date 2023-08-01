@@ -88,6 +88,7 @@ function install_homebrew_package(){
     procs
     gping
     httpie
+    ripgrep
     dog
   )
   for package in ${packages[@]}; do
