@@ -3,7 +3,7 @@
     name = ao0000
 [core]
     editor = vim
-    excludesFile = ~/.gitignore
+    excludesfile = ~/.gitignore_global
     preloadindex = true
     pager = delta
 [init]

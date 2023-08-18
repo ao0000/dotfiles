@@ -107,6 +107,7 @@ function create_symbolic(){
 
   # git
   ln -sf $DOTFILES_PATH/git/.gitconfig $HOME/.gitconfig
+  ln -sf $DOTFILES_PATH/git/.gitignore_global $HOME/.gitignore_global
 
   # tmux
   ln -sf $DOTFILES_PATH/tmux/.tmux.conf $HOME/.tmux.conf
