@@ -69,6 +69,7 @@ function install_homebrew_package(){
     tmux
     vim
     starship
+    ghq
     git-secrets
     docker-clean
     bat
