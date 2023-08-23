@@ -9,6 +9,7 @@ rm $HOME/.vimrc
 
 # git
 rm $HOME/.gitconfig
+rm $HOME/.gitignore_global
 
 # tmux
 rm $HOME/.tmux.conf

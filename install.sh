@@ -108,18 +108,6 @@ function create_symbolic(){
   ln -sf $DOTFILES_PATH/osx/.hushlogin $HOME/.hushlogin
 }
 
-function setup_git(){
-  if [ ! -d "$HOME/.config/git" ]; then
-    mkdir $HOME/.config/git
-  fi
-  cp $DOTFILES_PATH/git/.gitconfig/.gitignore_global $HOME/.config/git/ignore
-}
-
-function reload_shell(){
-  . $HOME/.bashrc
-  . $HOME/.bash_profile
-}
-
 function main(){
   echo "${DOTFILES_HEADER}"
 
@@ -131,7 +119,12 @@ function main(){
 
   create_symbolic
 
-  reload_shell
+  cd $DOTFILES_PATH
+  git config --local user.email ao0000dev@gmail.com
+  git config --local user.name ao0000
+
+  echo 'dotfiles has finished to execute'
+  exit;
 }
 
 main
