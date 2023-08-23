@@ -42,21 +42,13 @@ function install_homebrew() {
 
 function install_homebrew_package(){
   casks=(
-    font-hack-nerd-font
     visual-studio-code
     docker
     sequel-ace
     postman
-    insomnia
-    google-chrome
     google-japanese-ime
-    slack
-    zoom
-    discord
-    kindle
     deepl
     clipy
-    bitwarden
   )
   for cask in ${casks[@]}; do
     brew install --cask $cask
