@@ -119,12 +119,7 @@ function main(){
 
   create_symbolic
 
-  cd $DOTFILES_PATH
-  git config --local user.email ao0000dev@gmail.com
-  git config --local user.name ao0000
-
   echo 'dotfiles has finished to execute'
-  exit;
 }
 
 main
