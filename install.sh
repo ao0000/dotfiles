@@ -111,6 +111,9 @@ function create_symbolic(){
 
   # tmux
   ln -sf $DOTFILES_PATH/tmux/.tmux.conf $HOME/.tmux.conf
+
+  # hide last login message on OSX
+  ln -sf $DOTFILES_PATH/osx/.hushlogin $HOME/.hushlogin
 }
 
 function setup_git(){
