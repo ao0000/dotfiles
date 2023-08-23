@@ -9,7 +9,7 @@ DOTFILES_HEADER='
   
 '
 
-DOTFILES_PATH=$HOME/.dotfiles
+DOTFILES_PATH=$HOME/dotfiles
 DOTFILES_GITHUB_URL="https://github.com/ao0000/dotfiles.git"
 
 function download_dotfiles(){

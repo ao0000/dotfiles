@@ -1,7 +1,5 @@
 #! /usr/bin/env bash
 
-DOTFILES_PATH=$HOME/.dotfiles
-
 # bash
 rm $HOME/.bashrc
 rm $HOME/.bash_profile
