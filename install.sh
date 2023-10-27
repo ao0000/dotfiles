@@ -102,18 +102,9 @@ function create_symbolic(){
 
   # tmux
   ln -sf $DOTFILES_PATH/tmux/.tmux.conf $HOME/.tmux.conf
-}
 
-function setup_git(){
-  if [ ! -d "$HOME/.config/git" ]; then
-    mkdir $HOME/.config/git
-  fi
-  cp $DOTFILES_PATH/git/.gitconfig/.gitignore_global $HOME/.config/git/ignore
-}
-
-function reload_shell(){
-  . $HOME/.bashrc
-  . $HOME/.bash_profile
+  # hide last login message on OSX
+  ln -sf $DOTFILES_PATH/osx/.hushlogin $HOME/.hushlogin
 }
 
 function main(){
@@ -127,7 +118,7 @@ function main(){
 
   create_symbolic
 
-  reload_shell
+  echo 'dotfiles has finished to execute'
 }
 
 main
