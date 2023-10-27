@@ -9,7 +9,7 @@ DOTFILES_HEADER='
   
 '
 
-DOTFILES_PATH=$HOME/.dotfiles
+DOTFILES_PATH=$HOME/dotfiles
 DOTFILES_GITHUB_URL="https://github.com/ao0000/dotfiles.git"
 
 function download_dotfiles(){
@@ -42,21 +42,8 @@ function install_homebrew() {
 
 function install_homebrew_package(){
   casks=(
-    font-hack-nerd-font
     visual-studio-code
     docker
-    sequel-ace
-    postman
-    insomnia
-    google-chrome
-    google-japanese-ime
-    slack
-    zoom
-    discord
-    kindle
-    deepl
-    clipy
-    bitwarden
   )
   for cask in ${casks[@]}; do
     brew install --cask $cask
@@ -69,7 +56,6 @@ function install_homebrew_package(){
     tmux
     vim
     starship
-    ghq
     git-secrets
     docker-clean
     bat
@@ -91,6 +77,11 @@ function install_homebrew_package(){
     httpie
     ripgrep
     dog
+    kubectl
+    yq
+    kustomize
+    helm
+    skaffold
   )
   for package in ${packages[@]}; do
     brew install $package
