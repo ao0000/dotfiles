@@ -82,6 +82,7 @@ function install_homebrew_package(){
     kustomize
     helm
     skaffold
+    asdf
   )
   for package in ${packages[@]}; do
     brew install $package

@@ -47,3 +47,6 @@ source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 
 # Prompt
 export STARSHIP_CONFIG=$HOME/.dotfiles/starship/starship.toml
+
+# go
+export PATH=$PATH:$(go env GOPATH)/bin
