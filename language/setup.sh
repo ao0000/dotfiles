@@ -33,6 +33,16 @@ function setup_rust(){
     asdf global rust latest
 }
 
+function setup_node(){
+    # nodejs
+    asdf plugin-add nodejs
+    asdf install nodejs latest
+    asdf global nodejs latest
+
+    # yarn
+    npm install --global yarn
+}
+
 function main(){
     setup_gcc
 
@@ -41,6 +51,8 @@ function main(){
     setup_go
 
     setup_rust
+
+    setup_node
 }
 
 main
