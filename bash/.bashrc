@@ -1,14 +1,13 @@
-# Prompt
-export STARSHIP_CONFIG=$HOME/.dotfiles/starship/starship.toml
+# prompt
 eval "$(starship init bash)"
 
-# Alias
+# alias
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
 alias cat='bat'
-alias ls='exa'
+alias ls='exa --icons'
 alias du='dust'
 alias df='duf'
 alias find='fd'
@@ -19,8 +18,6 @@ alias ps='procs'
 alias ping='gping'
 alias h='tldr'
 alias hc='cheat'
-
-eval "$(starship init bash)"
 
 # git
 alias g='git'
@@ -44,9 +41,6 @@ alias cd='z'
 # Completion
 source $(brew --prefix)/etc/bash_completion
 source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
-
-# Prompt
-export STARSHIP_CONFIG=$HOME/.dotfiles/starship/starship.toml
 
 # go
 export PATH=$PATH:$(go env GOPATH)/bin
