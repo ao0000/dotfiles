@@ -108,7 +108,7 @@ function create_symbolic(){
   ln -sf $DOTFILES_PATH/starship/starship.toml $HOME/.config/starship.toml
 
   # hide last login message on OSX
-  ln -sf $DOTFILES_PATH/osx/.hushlogin $HOME/.hushlogin
+  touch $HOME/.hushlogin
 }
 
 function main(){
