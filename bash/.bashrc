@@ -42,5 +42,8 @@ alias cd='z'
 source $(brew --prefix)/etc/bash_completion
 source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 
+# Intellij
+export PATH=$PATH:$HOME/Library/Application\ Support/JetBrains/Toolbox/scripts
+
 # go
 export PATH=$PATH:$(go env GOPATH)/bin
