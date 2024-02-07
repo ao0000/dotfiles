@@ -10,10 +10,11 @@
     defaultBranch = main
 [color]
     ui = auto
+[alias]
+  logg = log --stat --decorate=short --pretty=format:'%C(yellow)%h %Cgreen%cr %Cblue%cn%Cred%d %Creset%s %C(cyan)%b'
 [help]
     autocorrect = 1
 
-# delta
 [interactive]
     diffFilter = delta --color-only --features=interactive
 
