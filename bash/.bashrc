@@ -7,7 +7,7 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 alias cat='bat'
-alias ls='exa --icons'
+alias ls='eza --icons --git --time-style relative -l'
 alias du='dust'
 alias df='duf'
 alias find='fd'

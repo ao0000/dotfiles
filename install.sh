@@ -59,7 +59,7 @@ function install_homebrew_package(){
     git-secrets
     docker-clean
     bat
-    exa
+    eza
     git-delta
     dust
     duf
