@@ -47,3 +47,11 @@ export PATH=$PATH:$HOME/Library/Application\ Support/JetBrains/Toolbox/scripts
 
 # go
 export PATH=$PATH:$(go env GOPATH)/bin
+
+# kubernetes(ref: https://kubernetes.io/docs/reference/kubectl/quick-reference/)
+source <(kubectl completion bash)
+alias k=kubectl
+complete -o default -F __start_kubectl k
+
+# krew
+export PATH="$PATH:${KREW_ROOT:-$HOME/.krew}/bin"

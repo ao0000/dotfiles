@@ -78,6 +78,8 @@ function install_homebrew_package(){
     ripgrep
     dog
     kubectl
+    kind
+    krew
     yq
     kustomize
     helm
