@@ -56,6 +56,7 @@ function install_homebrew_package(){
     tmux
     vim
     starship
+    font-hack-nerd-font
     git-secrets
     docker-clean
     bat
