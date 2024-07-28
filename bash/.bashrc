@@ -55,3 +55,9 @@ complete -o default -F __start_kubectl k
 
 # krew
 export PATH="$PATH:${KREW_ROOT:-$HOME/.krew}/bin"
+
+# mysql-client
+export PATH="$PATH:$(brew --prefix mysql-client)"
+
+# redis
+export PATH="$PATH:$(brew --prefix redis)"

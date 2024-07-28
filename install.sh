@@ -85,6 +85,8 @@ function install_homebrew_package(){
     helm
     skaffold
     asdf
+    mysql-client
+    redis
   )
   for package in ${packages[@]}; do
     brew install $package
